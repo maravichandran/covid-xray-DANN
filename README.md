@@ -12,7 +12,7 @@
 4. [Works Cited](#Works-Cited)
 
 ## Authors
-Maya Ravichandran, Arastou Pournadali Khamseh, Ajay Koritala, Michael McGillicuddy
+[Maya Ravichandran](https://github.com/maravichandran), [Arastou Pournadali Khamseh](https://github.com/arastoo723), [Ajay Koritala](https://github.com/joybot56), [Michael McGillicuddy](https://github.com/mpaul418)
 
 ## Description
 ### DANN Model Overview
@@ -32,7 +32,8 @@ Essentially, our DANN model works by combining data from the COVID-19 Radiograph
 ### Results
 The accuracy of our models fluctuated each time we ran the models. We found that that accuracy of our baseline model was approximately 50-55%, with an exact value of 49.50% accuracy in classifying the test data as healthy or unhealthy (COVID) on our most recent run. This is approximately the same as the accuracy of randomly assigning the test data to healthy or unhealthy. Our DANN model outperformed the baseline model, with an accuracy of approximately 60-65%, with an exact value of 62.25% on our most recent run. Hence, the DANN model was successful in improving the accuracy of domain adaptation compared to the baseline. 
 
-Fig. 2: Progression of accuracy (as a percentage) on testing data over time as the DANN model was trained over multiple epochs.
+![Graph of accuracy results over time](accuracy_results.PNG "Accuracy Results")
+<figcaption>Fig. 2: Progression of accuracy (as a percentage) on testing data over time as the DANN model was trained over multiple epochs.</figcaption>
 
 As shown in Fig. 2, the accuracy of the model fluctuated as it was trained over multiple epochs. We reported our accuracy of 62.25% by taking the maximum accuracy achieved over all the epochs.
 

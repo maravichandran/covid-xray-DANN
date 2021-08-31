@@ -1,5 +1,11 @@
 # Diagnosing COVID-19 Chest X-Rays Using Convolutional Neural Networks and Domain Adaptation
 
+# Table of contents
+1. [Authors](#authors)
+2. [Description](#Description)
+    1. [DANN Model Overview](#DANNModelOverview)
+3. [Usage](#Usage)
+
 ## Authors
 Maya Ravichandran, Arastou Pournadali Khamseh, Ajay Koritala, Michael McGillicuddy
 

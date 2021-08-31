@@ -1,9 +1,9 @@
 # Diagnosing COVID-19 Chest X-Rays Using Convolutional Neural Networks and Domain Adaptation
 
-# Table of contents
+## Table of contents
 1. [Authors](#authors)
 2. [Description](#Description)
-    1. [DANN Model Overview](#DANNModelOverview)
+    1. [DANN Model Overview](#DANN-Model-Overview)
 3. [Usage](#Usage)
 
 ## Authors
@@ -14,8 +14,8 @@ Maya Ravichandran, Arastou Pournadali Khamseh, Ajay Koritala, Michael McGillicud
 Domain-Adversarial Training of Neural Networks (DANN), proposed by Ganin et al., is a popular domain adaptation method that is simple to implement and only requires slight additions to standard neural networks [1]. In this algorithm, the standard feed-forward neural network is split into two parts as illustrated in Fig. 1:  deep feature extractor (green) and a deep label predictor (blue). A domain classifier (red) is connected to the feature extractor via a gradient reversal layer. During the backpropagation process in the training, the gradient reversal layer multiplies the gradient by a certain negative constant to achieve unsupervised domain adaptation between the source and target domains. The key idea here is that the gradient reversal ensures that the feature distributions over the two domains are made similar. Therefore, the classifier cannot distinguish between source and target domain and it will mainly focus on the domain-invariant features.
 
 Fig. 1: Schematic structure of DANN domain adaptation model
-Contributions of Our Work
 
+### Contributions of Our Work
 In this work, we would like to assess the ability of the DANN algorithm to generalize a model that can classify X-ray images of different lung diseases as healthy or unhealthy. The base model will be trained on pneumonia disease X-ray images and the target domain is selected to be COVID-19 X-ray images. Our goal is to perform domain shift and identify common features between the source and target domain which helps increase the accuracy of the base model when dealing with the target domain. To our knowledge, no prior studies have been done on domain adaptation between pneumonia and COVID-19 chest X-ray images or on using DANNs for this application. 
 
 ### Methodology

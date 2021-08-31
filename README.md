@@ -1,18 +1,16 @@
 # Diagnosing COVID-19 Chest X-Rays Using Convolutional Neural Networks and Domain Adaptation
 
+**Authors**: [Maya Ravichandran](https://github.com/maravichandran), [Arastou Pournadali Khamseh](https://github.com/arastoo723), [Ajay Koritala](https://github.com/joybot56), [Michael McGillicuddy](https://github.com/mpaul418)
+
 ## Table of contents
-1. [Authors](#authors)
-2. [Description](#Description)
+1. [Description](#Description)
     1. [DANN Model Overview](#DANN-Model-Overview)
     2. [Contributions of Our Work](#Contributions-of-Our-Work)
     3. [Methodology](#Methodology)
     4. [Results](#Results)
     5. [Future Research](#Future-Research)
-3. [Usage](#Usage)
-4. [Works Cited](#Works-Cited)
-
-## Authors
-[Maya Ravichandran](https://github.com/maravichandran), [Arastou Pournadali Khamseh](https://github.com/arastoo723), [Ajay Koritala](https://github.com/joybot56), [Michael McGillicuddy](https://github.com/mpaul418)
+2. [Usage](#Usage)
+3. [Works Cited](#Works-Cited)
 
 ## Description
 ### DANN Model Overview

@@ -18,7 +18,8 @@
 ### DANN Model Overview
 Domain-Adversarial Training of Neural Networks (DANN), proposed by Ganin et al., is a popular domain adaptation method that is simple to implement and only requires slight additions to standard neural networks [1]. In this algorithm, the standard feed-forward neural network is split into two parts as illustrated in Fig. 1:  deep feature extractor (green) and a deep label predictor (blue). A domain classifier (red) is connected to the feature extractor via a gradient reversal layer. During the backpropagation process in the training, the gradient reversal layer multiplies the gradient by a certain negative constant to achieve unsupervised domain adaptation between the source and target domains. The key idea here is that the gradient reversal ensures that the feature distributions over the two domains are made similar. Therefore, the classifier cannot distinguish between source and target domain and it will mainly focus on the domain-invariant features.
 
-Fig. 1: Schematic structure of DANN domain adaptation model
+![DANN Schematic Diagram](dann_schematic.PNG "DANN Schematic")
+**Fig. 1**: Schematic structure of DANN domain adaptation model
 
 ### Contributions of Our Work
 In this work, we would like to assess the ability of the DANN algorithm to generalize a model that can classify X-ray images of different lung diseases as healthy or unhealthy. The base model will be trained on pneumonia disease X-ray images and the target domain is selected to be COVID-19 X-ray images. Our goal is to perform domain shift and identify common features between the source and target domain which helps increase the accuracy of the base model when dealing with the target domain. To our knowledge, no prior studies have been done on domain adaptation between pneumonia and COVID-19 chest X-ray images or on using DANNs for this application. 
@@ -33,12 +34,7 @@ Essentially, our DANN model works by combining data from the COVID-19 Radiograph
 The accuracy of our models fluctuated each time we ran the models. We found that that accuracy of our baseline model was approximately 50-55%, with an exact value of 49.50% accuracy in classifying the test data as healthy or unhealthy (COVID) on our most recent run. This is approximately the same as the accuracy of randomly assigning the test data to healthy or unhealthy. Our DANN model outperformed the baseline model, with an accuracy of approximately 60-65%, with an exact value of 62.25% on our most recent run. Hence, the DANN model was successful in improving the accuracy of domain adaptation compared to the baseline. 
 
 ![Graph of accuracy results over time](accuracy_results.PNG "Accuracy Results")
-
-<figcaption>
-
-Fig. 2: Progression of accuracy (as a percentage) on testing data over time as the DANN model was trained over multiple epochs.
-
-</figcaption>
+**Fig. 2**: Progression of accuracy (as a percentage) on testing data over time as the DANN model was trained over multiple epochs.
 
 As shown in Fig. 2, the accuracy of the model fluctuated as it was trained over multiple epochs. We reported our accuracy of 62.25% by taking the maximum accuracy achieved over all the epochs.
 

@@ -34,7 +34,7 @@ The accuracy of our models fluctuated each time we ran the models. We found that
 ![Graph of accuracy results over time](img/accuracy_results.PNG "Accuracy Results")
 **Fig. 2**: Progression of accuracy (as a percentage) on testing data over time as the DANN model was trained over multiple epochs.
 
-As shown in Fig. 2, the accuracy of the model fluctuated as it was trained over multiple epochs. We reported our accuracy of 62.25% by taking the maximum accuracy achieved over all the epochs.
+As shown in Fig. 2, the accuracy of the model fluctuated as it was trained over multiple epochs. We reported our accuracy of 62.25% by taking the maximum accuracy achieved over all the epochs, making this figure a report of validation accuracy.
 
 One thing to acknowledge when comparing the accuracy of our baseline model to our DANN model is that in order to make our model work with the data, we downsized the images during the pre-processing stage to reduce the amount of computing resources required during training, which we did not have to do with the baseline model that utilized resnet152. With more computing resources, we may be able to achieve better results with only slight modifications to our DANN model since we would be able to use the full-sized images with our DANN model. 
 
